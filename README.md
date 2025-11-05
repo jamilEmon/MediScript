@@ -110,3 +110,51 @@ The MediScript project follows a client-server architecture, separating the user
 4.  **Reporting**: The `ReportsComponent` can fetch aggregated data from the backend to display various reports related to prescriptions.
 
 This architecture ensures a clear separation of concerns, making the application scalable, maintainable, and easier to develop.
+<<<<<<< HEAD
+
+## Architectural Diagram (Text-based)
+
+```
++---------------------+       +---------------------+       +---------------------+
+|       User          |       |     Frontend        |       |       Backend       |
+| (Web Browser)       |       |  (Angular App)      |       |  (Spring Boot App)  |
++----------+----------+       +----------+----------+       +----------+----------+
+           |                            |                            |
+           | 1. Access UI               |                            |
+           +--------------------------->|                            |
+           |                            |                            |
+           |                            | 2. Login Request           |
+           |                            +--------------------------->|
+           |                            |                            |
+           |                            |                            | 3. Authenticate User
+           |                            |                            |<-------------------+
+           |                            |                            |                    |
+           |                            |                            | 4. Return JWT      |
+           |<---------------------------+                            |                    |
+           |                            |                            |                    |
+           |                            | 5. Data Request (with JWT) |                    |
+           |                            +--------------------------->|                    |
+           |                            |                            |                    |
+           |                            |                            | 6. Process Request |
+           |                            |                            | (PrescriptionService)|
+           |                            |                            |                    |
+           |                            |                            +----------+----------+
+           |                            |                                       |
+           |                            |                                       | 7. Database Operation
+           |                            |                                       | (PrescriptionRepository)
+           |                            |                                       +---------------------+
+           |                            |                                                             |
+           |                            |                                                             | 8. H2 Database
+           |                            |                                                             | (Data Storage)
+           |                            |                                                             +---------------------+
+           |                            |                                       |
+           |                            |                                       | 9. Return Data
+           |                            |                            |<-------------------+
+           |                            |                            |
+           |                            | 10. Update UI              |
+           |<---------------------------+                            |
+           |                            |                            |
++----------+----------+       +----------+----------+       +----------+----------+
+```
+=======
+>>>>>>> d8db72d895c34c80c28913a70f1347029af9bae3
