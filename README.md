@@ -1,3 +1,4 @@
+Project test video : https://drive.google.com/file/d/1J8ehoHuzYimHIkeSUeVvDwFYQnGhGghK/view?usp=drive_link
 # MediScript Project Overview
 
 This project, "MediScript," is a full-stack application designed for managing prescriptions. It consists of a Spring Boot backend and an Angular frontend. The backend handles prescription data management, user authentication, and potentially prescription generation. The frontend provides a user interface for various functionalities, including user login, a dashboard, prescription forms, viewing prescriptions, and reports.
