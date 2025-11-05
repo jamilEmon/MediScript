@@ -156,5 +156,4 @@ This architecture ensures a clear separation of concerns, making the application
            |                            |                            |
 +----------+----------+       +----------+----------+       +----------+----------+
 ```
-=======
->>>>>>> d8db72d895c34c80c28913a70f1347029af9bae3
+
