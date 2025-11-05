@@ -114,47 +114,4 @@ This architecture ensures a clear separation of concerns, making the application
 <<<<<<< HEAD
 
 ## Architectural Diagram (Text-based)
-
-```
-+---------------------+       +---------------------+       +---------------------+
-|       User          |       |     Frontend        |       |       Backend       |
-| (Web Browser)       |       |  (Angular App)      |       |  (Spring Boot App)  |
-+----------+----------+       +----------+----------+       +----------+----------+
-           |                            |                            |
-           | 1. Access UI               |                            |
-           +--------------------------->|                            |
-           |                            |                            |
-           |                            | 2. Login Request           |
-           |                            +--------------------------->|
-           |                            |                            |
-           |                            |                            | 3. Authenticate User
-           |                            |                            |<-------------------+
-           |                            |                            |                    |
-           |                            |                            | 4. Return JWT      |
-           |<---------------------------+                            |                    |
-           |                            |                            |                    |
-           |                            | 5. Data Request (with JWT) |                    |
-           |                            +--------------------------->|                    |
-           |                            |                            |                    |
-           |                            |                            | 6. Process Request |
-           |                            |                            | (PrescriptionService)|
-           |                            |                            |                    |
-           |                            |                            +----------+----------+
-           |                            |                                       |
-           |                            |                                       | 7. Database Operation
-           |                            |                                       | (PrescriptionRepository)
-           |                            |                                       +---------------------+
-           |                            |                                                             |
-           |                            |                                                             | 8. H2 Database
-           |                            |                                                             | (Data Storage)
-           |                            |                                                             +---------------------+
-           |                            |                                       |
-           |                            |                                       | 9. Return Data
-           |                            |                            |<-------------------+
-           |                            |                            |
-           |                            | 10. Update UI              |
-           |<---------------------------+                            |
-           |                            |                            |
-+----------+----------+       +----------+----------+       +----------+----------+
-```
-
+https://app.eraser.io/workspace/1APInRx9Tl4EskCXxxee?origin=share
